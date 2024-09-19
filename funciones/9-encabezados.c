@@ -42,3 +42,8 @@ int funcion4(int x) {
     printf("En funcion4()");
     return x;
 }
+int funcion5(int x) {
+    printf("En funcion5()...\n");
+    int y = x + 3;
+    return y;
+}
