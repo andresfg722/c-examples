@@ -4,6 +4,8 @@
 int main() {
 
     int v;
+    int m;
+    int p;
 
     // Llama a las 3 funciones
     funcion1();
@@ -12,6 +14,13 @@ int main() {
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
+
+    // Llama a funcion4() y funcion5() y guarda sus resultados
+
+    m = funcion4(10);
+    printf("m = %d\n", m);
+    p = funcion5(10);
+    printf("p = %d\n", p);
 
     return 0;
 
@@ -36,20 +45,13 @@ int funcion3(int x) {
     return y;
 }
 
-int funcion5(int x) {
-    printf("en funcion5");
-int funcion4(int x) {
-    printf("En funcion4()");
-    return x;
-}
-
 int funcion4(int x) {
     printf("En funcion4()...\n");
     int y = x - 2;
-=======
+    return y;
+}
 int funcion5(int x) {
     printf("En funcion5()...\n");
     int y = x + 3;
->>>>>>> feature-branch
     return y;
 }
